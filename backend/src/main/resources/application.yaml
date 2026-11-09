@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: candal
+
+  # DB 연결을 시작할 때까지 데이터베이스 자동 설정을 비활성화합니다.
+  # MySQL 연동을 시작하면 아래 exclude 항목을 제거하세요.
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration
+      - org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration
